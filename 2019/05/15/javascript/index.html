@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>javascript | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="基础数据类型12345booleannumber stringnullundefined 复杂数据类型123functionarrayobject 比较(关系)运算符12345678&amp;gt;&amp;lt;&amp;gt;=&amp;lt;===!=!===== 算术运算符123456789101112+-*/%++--+=-=*=/=%= 隐式转换:number + 非数字/字符串 = NaN/stringnumber">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript">
+<meta property="og:url" content="http://yoursite.com/2019/05/15/javascript/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基础数据类型12345booleannumber stringnullundefined 复杂数据类型123functionarrayobject 比较(关系)运算符12345678&amp;gt;&amp;lt;&amp;gt;=&amp;lt;===!=!===== 算术运算符123456789101112+-*/%++--+=-=*=/=%= 隐式转换:number + 非数字/字符串 = NaN/stringnumber">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-15T07:59:27.786Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript">
+<meta name="twitter:description" content="基础数据类型12345booleannumber stringnullundefined 复杂数据类型123functionarrayobject 比较(关系)运算符12345678&amp;gt;&amp;lt;&amp;gt;=&amp;lt;===!=!===== 算术运算符123456789101112+-*/%++--+=-=*=/=%= 隐式转换:number + 非数字/字符串 = NaN/stringnumber">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/15/javascript/" class="article-date">
+  <time datetime="2019-05-15T07:59:01.000Z" itemprop="datePublished">2019-05-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="基础数据类型"><a href="#基础数据类型" class="headerlink" title="基础数据类型"></a>基础数据类型</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">boolean</span><br><span class="line">number </span><br><span class="line">string</span><br><span class="line">null</span><br><span class="line">undefined</span><br></pre></td></tr></table></figure>
+<h1 id="复杂数据类型"><a href="#复杂数据类型" class="headerlink" title="复杂数据类型"></a>复杂数据类型</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function</span><br><span class="line">array</span><br><span class="line">object</span><br></pre></td></tr></table></figure>
+<h1 id="比较-关系-运算符"><a href="#比较-关系-运算符" class="headerlink" title="比较(关系)运算符"></a>比较(关系)运算符</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;</span><br><span class="line">&lt;</span><br><span class="line">&gt;=</span><br><span class="line">&lt;=</span><br><span class="line">==</span><br><span class="line">!=</span><br><span class="line">!==</span><br><span class="line">===</span><br></pre></td></tr></table></figure>
+<h1 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">+</span><br><span class="line">-</span><br><span class="line">*</span><br><span class="line">/</span><br><span class="line">%</span><br><span class="line">++</span><br><span class="line">--</span><br><span class="line">+=</span><br><span class="line">-=</span><br><span class="line">*=</span><br><span class="line">/=</span><br><span class="line">%=</span><br></pre></td></tr></table></figure>
+<p>隐式转换:<br>number + 非数字/字符串 = NaN/string<br>number - 非数字/数字字符串 = NaN/number<br>字符串 + 数组 = 字符串(数组转化为字符串)<br>字符串 + 任意值 = 字符串(其他类型都会转为字符串)</p>
+<p>2 + [1,2,3] + “hello” = “21,2,3hello”</p>
+<p>显式转换:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Number()</span><br><span class="line">String()</span><br><span class="line">Boolean()</span><br><span class="line"></span><br><span class="line">parseInt() 变成整型</span><br><span class="line">parseFloat()	变成浮点值</span><br></pre></td></tr></table></figure></p>
+<h1 id="js-在输出内容"><a href="#js-在输出内容" class="headerlink" title="js 在输出内容"></a>js 在输出内容</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">console.log()</span><br><span class="line">alert()</span><br><span class="line">prompt()</span><br><span class="line">confirm()</span><br><span class="line">document.write()</span><br></pre></td></tr></table></figure>
+<h1 id="Date-和-Math"><a href="#Date-和-Math" class="headerlink" title="Date 和 Math"></a>Date 和 Math</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">new Date()</span><br><span class="line">getFullYear() 年份</span><br><span class="line">getMonth() 月份 [0-11]</span><br><span class="line">getDate() 一个月的某一天</span><br><span class="line">getDay()	返回星期某</span><br><span class="line">getHours() 小时</span><br><span class="line">getMinutes() 分钟</span><br><span class="line">getSeconds() 秒数</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Math</span><br><span class="line">Math.ceil() 向上取整</span><br><span class="line">Math.floor()  向下取整</span><br><span class="line">Math.random()  取随机数(0,1]</span><br><span class="line">Math.abs() 绝对值</span><br><span class="line">Math.max(a,b) 取其中的最大值</span><br><span class="line">Math.min(a,b)	取其中的最小值</span><br><span class="line">Math.pow(x,y) x的y次幂</span><br><span class="line">Math.round()	数字的舍入运算</span><br><span class="line"></span><br><span class="line">Math.PI</span><br><span class="line">Math.sin(弧度)</span><br><span class="line">Math.cos(弧度)</span><br><span class="line">周角 = 2π弧度</span><br></pre></td></tr></table></figure>
+<h1 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;&amp; || !</span><br></pre></td></tr></table></figure>
+<p>&amp;&amp;: 都真才真            遇到 false 就返回<br>||: 一个真就为真    遇到 true 就返回</p>
+<p>短路语句: “今天下雨吗” &amp;&amp; console.log(“不上班”);<br>!! 强制转化为 bollean 类型</p>
+<p>比较运算符的 连比方式  <code>1 &lt; a &lt; 5</code>    写法=====&gt; <code>a &gt; 1 &amp;&amp; a &lt; 5</code></p>
+<h1 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a>if 语句</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if(判断句1)&#123;</span><br><span class="line">	// 跳楼现象</span><br><span class="line">&#125;else if(判断句2)&#123;</span><br><span class="line">	// 判断句1不成立</span><br><span class="line">&#125;else&#123;</span><br><span class="line">	// else 后面不加小括号(判断句)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="switch-语句"><a href="#switch-语句" class="headerlink" title="switch 语句"></a>switch 语句</h1><p>不自带跳楼现象 需要使用 break 帮助跳楼<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">switch(变量(不能填布尔值))&#123;</span><br><span class="line">	case 变量可能值1:</span><br><span class="line">		// 处理</span><br><span class="line">		break;</span><br><span class="line">	case 变量可能值2:</span><br><span class="line">	case 变量可能值3:</span><br><span class="line">	case 变量可能值4:</span><br><span class="line">		// 处理</span><br><span class="line">		break;</span><br><span class="line">	default :</span><br><span class="line">		// 处理</span><br><span class="line">		break;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">for(语句1,语句2,语句3)&#123;</span><br><span class="line">	// 三个语句皆可省</span><br><span class="line">	// 语句1: 变量声明</span><br><span class="line">	// 语句2: for循环停止条件</span><br><span class="line">	// 语句3: 变量的增减</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>遍历数组(排序)<br>冒泡排序:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var arr = [...];</span><br><span class="line">for(var j = 0; j &lt; arr.length - 1; j++)&#123;</span><br><span class="line">	for(var i = 0; i &lt; arr.length - j - 1; i ++)&#123;</span><br><span class="line">		if(arr[i] &gt; arr[i+1])&#123;</span><br><span class="line">			var temp = arr[i+1];</span><br><span class="line">			arr[i+1] = arr[i];</span><br><span class="line">			arr[i] = temp;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>选择排序:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var minIndex = 0,temp;</span><br><span class="line">for(var j = 0; j &lt; arr.length - 1; j ++)&#123;</span><br><span class="line">	minIndex = j;</span><br><span class="line">	for(var i = j + 1; i &lt; arr.length; i ++)&#123;</span><br><span class="line">		if(arr[minIndex] &gt; arr[i])&#123;</span><br><span class="line">			minIndex = i;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	if(arr[minIndex] !== arr[j])&#123;</span><br><span class="line">		temp = arr[j];</span><br><span class="line">		arr[j] = arr[minIndex];</span><br><span class="line">		arr[minIndex] = temp;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>9 * 9 乘法表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for(i = 1; i &lt; 10; i ++)&#123;</span><br><span class="line">	var str = &quot;&quot;;</span><br><span class="line">	for(var j = 1; j &lt;= 10 - i; j ++)&#123;</span><br><span class="line">		str = (10 - i) + &quot;*&quot; + j + &quot;=&quot; + j*(10 - i) + &quot; &quot; + str;</span><br><span class="line">	&#125;</span><br><span class="line">	console.log(str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="while-循环-和-do-while-循环"><a href="#while-循环-和-do-while-循环" class="headerlink" title="while 循环 和 do while 循环"></a>while 循环 和 do while 循环</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(判断句)&#123;</span><br><span class="line">	<span class="comment">// 循环体</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	<span class="comment">// 循环体</span></span><br><span class="line">&#125;<span class="keyword">while</span>(判断句)</span><br></pre></td></tr></table></figure>
+<p>do while 始终循环一次 例子:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> j = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">while</span>(j !== <span class="number">5</span>)&#123;</span><br><span class="line">	<span class="comment">// 循环体</span></span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"斩了外星人"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">	<span class="comment">// 循环体</span></span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"斩了外星人"</span>);</span><br><span class="line">&#125;<span class="keyword">while</span>(j !== <span class="number">5</span>)</span><br></pre></td></tr></table></figure></p>
+<h1 id="break"><a href="#break" class="headerlink" title="break"></a>break</h1><blockquote>
+<p>终止当前循环</p>
+</blockquote>
+<h1 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h1><blockquote>
+<p>跳出本次循环,继续下轮循环</p>
+</blockquote>
+<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><ol>
+<li><p>声明方式</p>
+<ul>
+<li><code>var arr = [];</code></li>
+<li><code>var arr = new Array()</code></li>
+</ul>
+</li>
+<li><p>赋值</p>
+<ul>
+<li><code>var arr = [1,2,3]</code></li>
+<li><code>var arr = []; arr[0] = 1; arr[1] = 2; arr[2] = 3</code></li>
+</ul>
+</li>
+<li><p>数组的属性 arr.length 返回数组的长度</p>
+</li>
+<li><p>数组的方法</p>
+<ul>
+<li>push()         把一个或多个变量添加到数组的后面,返回新数组的长度</li>
+<li>unshift() 把一个或多个变量添加到数组的前面,返回新数组的长度</li>
+<li>shift()     删除数组的第一个,返回被删除的元素</li>
+<li>pop()         删除数组的最后一个,返回被删除的元素</li>
+<li>join()        将数组转成字符串,参数是分隔符,可以指定分隔符([“张飞”,”关羽”,”刘备”].join(“|”))</li>
+<li>concat()    数组(或一个或多个变量)合并,返回值合并后的新数组</li>
+<li>splice(起始位置,删除个数,替换的变量)        返回值是被删除的元素组成的数组</li>
+<li>toString()    将数组装换成字符串,用逗号分隔</li>
+<li>reverse() 翻转数组,返回翻转后的数组</li>
+<li>sort()         排序,参数是一个函数,两个形参,函数返回值是”a-b” 数组正序排列, “b-a” 数组倒序排列</li>
+<li>slice(起始位置,结束位置) 返回截取的新数组,结束位置不写,默认截取到数组最后</li>
+<li>indexOf()/lastIndexOf() 没找到返回 -1,找到返回下标</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 数组去重</span></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">7</span>,<span class="number">6</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = [];</span><br><span class="line"><span class="comment">// indexOf 版</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i ++)&#123;</span><br><span class="line">	<span class="keyword">if</span>(i !== arr.lastIndexOf(arr[i]))&#123;</span><br><span class="line">		arr.splice(i,<span class="number">1</span>);</span><br><span class="line">		i --;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 夏雨版</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i ++)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> j = i + <span class="number">1</span>; j &lt; arr.length; j ++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(arr[i] === arr[j])&#123;</span><br><span class="line">			arr.splice(j,<span class="number">1</span>);</span><br><span class="line">			j --;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</span><br><span class="line"><span class="keyword">var</span> arr1 = [];</span><br><span class="line"><span class="comment">// 童浩钺版</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = arr.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i --)&#123;</span><br><span class="line">	arr1.push(arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr1);</span><br><span class="line"><span class="comment">// 反向</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i ++)&#123;</span><br><span class="line">	arr1.unshift(arr[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 程文进版</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">wenjin</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i ++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> j = i + <span class="number">1</span>; j &lt; arr.length; j ++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(i + j === arr.length <span class="number">-1</span>)&#123;</span><br><span class="line">				<span class="keyword">var</span> temp = arr[j];</span><br><span class="line">				arr[j] = arr[i];</span><br><span class="line">				arr[i] = temp;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line">wenjin(arr);</span><br></pre></td></tr></table></figure>
+<h1 id="字符串的方法"><a href="#字符串的方法" class="headerlink" title="字符串的方法"></a>字符串的方法</h1><ul>
+<li>charAt()/charCodeAt() 返回相应位置的字符/字符编码</li>
+<li>indexOf()/lastIndexOf() 找到返回下标,未找到返回 -1</li>
+<li>concat()    字符串链接,等同于 “+”,返回新字符串</li>
+<li>slice(起始位置,截止位置) 字符串截取,返回截取的字符串,截止位置不写,默认截取到最后[start,end)</li>
+<li>substr(起始位置,取的个数) 返回截取的字符串,截取个数不写,默认截取到最后</li>
+<li>substring(起始位置,截止位置) 等同于slice</li>
+<li>toUpperCase()/toLowerCase() 大小写</li>
+<li>split(分隔符)  指定分隔符,变成数组 “hello world”.split(“o”) = [“hell”,” w”,”rld”]</li>
+</ul>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><ol>
+<li><p>创建方式</p>
+<ul>
+<li>声明函数 function 名字(){}        函数声明提升,一次声明,全局调用</li>
+<li>匿名函数 function (){}</li>
+<li>函数表达式 var 名字 = function(){}  赋值完成后使用</li>
+</ul>
+</li>
+<li><p>参数 (形参/实参)</p>
+</li>
+</ol>
+<blockquote>
+<p>形参为实参占位置;形参实质是函数里声明的变量</p>
+</blockquote>
+<ul>
+<li>形参数 &gt; 实参数  多余的形参是 undefined</li>
+<li>形参数 &lt; 实参数    多余的实参被忽略,封存在 arguments 里</li>
+<li>形参数 == 实参数 理想状态</li>
+</ul>
+<blockquote>
+<p>如果传入的实参是 简单类型的变量,函数内部的改动不会影响外部变量<br>如果传入的实参是 复杂类型的变量,函数内部的改动会影响外部变量</p>
+</blockquote>
+<ol start="3">
+<li>返回值</li>
+</ol>
+<blockquote>
+<p>使用 return 返回值;return 后面不加值 作用是结束函数,返回 undefined;或者函数内部不写 return,函数执行完毕返回 undefined</p>
+</blockquote>
+<ol start="4">
+<li>立即执行函数</li>
+</ol>
+<p>匿名立即执行:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fn = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">// do something</span></span><br><span class="line">&#125;()</span><br></pre></td></tr></table></figure></p>
+<p>声明函数的立即执行:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">// do something</span></span><br><span class="line">&#125;())</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="comment">// do something</span></span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure></p>
+<p>立即执行函数传值:</p>
+<ul>
+<li>传一个值,一定需要形参接受</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var fn = function (name)&#123;</span><br><span class="line">	console.log(name);</span><br><span class="line">&#125;(&quot;张三&quot;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>传一个变量,可以使用形参接受,也可不用</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = 10;</span><br><span class="line">var fn = function (n)&#123;</span><br><span class="line">	console.log(n);</span><br><span class="line">	console.log(a);</span><br><span class="line">&#125;(a);</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>递归思想</li>
+</ol>
+<p>有名的 阶乘 / 不死神兔</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*  形参: n</span></span><br><span class="line"><span class="comment">*  找规律</span></span><br><span class="line"><span class="comment">			阶乘: n! = n * (n-1)!</span></span><br><span class="line"><span class="comment">			兔兔: nNumber = (n-1)Number + (n-2)Number</span></span><br><span class="line"><span class="comment">* 找出口(返回值)</span></span><br><span class="line"><span class="comment">			阶乘: n === 1 return 1;</span></span><br><span class="line"><span class="comment">			兔兔: n === 1 || n === 2 return 1;</span></span><br><span class="line"><span class="comment">* 终止条件</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">jc</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(n === <span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> n * jc(n<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">st</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(n === <span class="number">1</span> || n === <span class="number">2</span>)&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> st(n<span class="number">-1</span>) + st(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>变量作用域 (global 全局作用域/ 函数的局部作用域)</li>
+</ol>
+<blockquote>
+<p>全局作用域属于 window ,js中所有声明的变量和方法都是 global/window 对象上的属性或方法</p>
+<p>内部作用域可以访问外部作用域中的变量和方法,反之则不行</p>
+</blockquote>
+<p>函数封装的例子:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 传入两个值,返回这两个值的和</span></span><br><span class="line"><span class="comment">// 1. function 函数名()&#123;&#125;</span></span><br><span class="line"><span class="comment">// 2. 拟构形参</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">n,m</span>)</span>&#123;</span><br><span class="line">	<span class="comment">// 返回值</span></span><br><span class="line">	<span class="keyword">return</span> n + m;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 传入一个数组,返回数组各项的和</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> count = <span class="number">0</span>;<span class="comment">// 假设是和</span></span><br><span class="line">	<span class="comment">// 得出 和 的过程</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i ++)&#123;</span><br><span class="line">		count += arr[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="对象-和-JSON"><a href="#对象-和-JSON" class="headerlink" title="对象 和 JSON"></a>对象 和 JSON</h1><ol>
+<li><p>创建对象</p>
+<ul>
+<li><code>var obj = new Object()</code></li>
+<li><code>var obj = {}</code></li>
+</ul>
+</li>
+<li><p>赋值</p>
+<ul>
+<li><code>var obj = {name: &quot;张三&quot;}</code></li>
+</ul>
+</li>
+<li><p>对象是由 <code>key: value</code> 键值对组成的,可以嵌套任何类型值</p>
+</li>
+<li><p>JSON 本质是对象的字符串表示; 它由 双引号包括的键值对组成 “key”: “value”,其中 number,boolean类型可以不加双引号</p>
+</li>
+<li><p>相互转化</p>
+<ul>
+<li>对象 ==&gt; JSON    JOSN.stringify(obj);</li>
+<li>JSON ==&gt; 对象         JSON.parse(json);</li>
+</ul>
+</li>
+<li><p>案例: 豆瓣电影</p>
+</li>
+</ol>
+<h1 id="DOM-文档对象模型-提供访问和操作文档内容的属性和方法"><a href="#DOM-文档对象模型-提供访问和操作文档内容的属性和方法" class="headerlink" title="DOM(文档对象模型,提供访问和操作文档内容的属性和方法)"></a>DOM(文档对象模型,提供访问和操作文档内容的属性和方法)</h1><ol>
+<li><p>获取节点</p>
+<ul>
+<li><code>document.getElementsByClassName(&quot;className&quot;)</code> DOM对象数组</li>
+<li><code>document.getElementsByTagName(&quot;tagName&quot;)</code>    DOM对象数组</li>
+<li><code>document.getElementById(&quot;ID&quot;)</code>    一个 DOM 对象</li>
+<li><code>document.querySelector(&quot;#ID/.className/tagName&quot;)</code>    第一个符合条件 DOM 对象</li>
+<li><code>document.querySelectorAll(&quot;.className/tagName&quot;)</code>  符合条件的 DOM 对象数组</li>
+</ul>
+</li>
+<li><p>节点属性(nodeType)</p>
+<ul>
+<li>注释节点        3</li>
+<li>文本节点        8</li>
+<li>元素节点        1</li>
+<li>属性节点        2        获取方法<code>ele.getAttributeNode(&quot;某属性名&quot;)</code></li>
+<li>判断(ele.nodeType === ?)</li>
+</ul>
+</li>
+<li><p>更改样式</p>
+<ul>
+<li><code>ele.style.样式名 = &quot;值&quot;</code></li>
+<li><code>ele.setAttribute(&quot;样式名&quot;,&quot;样式值&quot;)</code></li>
+</ul>
+</li>
+<li><p>节点关系</p>
+<ul>
+<li>父节点 <code>parentNode</code></li>
+<li>上一个兄弟节点 <code>prevSibling/prevElementSibling</code></li>
+<li>下兄弟节点 <code>nextSibling/nextElementSibling</code></li>
+<li>子节点 <code>firstChild/firstElementChild/lastChild/lastElementChild/children/childNodes</code></li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 封住获取所有孩子节点的方法 兼容 IE</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getAllChild</span>(<span class="params">parentNode</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> children = parentNode.childNodes;</span><br><span class="line">	<span class="keyword">var</span> arr = [];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; children.length; i ++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(children[i].nodeType === <span class="number">1</span>)&#123;</span><br><span class="line">			arr.push(children[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取所有兄弟节点</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">allOthers</span>(<span class="params">ele</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> arr = [];</span><br><span class="line">	<span class="keyword">var</span> childArr = ele.parentNode.childNodes;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; childArr.length; i ++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(childArr[i].nodeType === <span class="number">1</span> &amp;&amp; childArr[i] !== ele)&#123;</span><br><span class="line">			arr.push(childArr[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 获取前面所有的兄弟节点</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">allPrev</span>(<span class="params">ele</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> arr = [];</span><br><span class="line">	<span class="keyword">var</span> childArr = ele.parentNode.childNodes;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; childArr.length; i ++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(childArr[i].nodeType === <span class="number">1</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(childArr[i] === ele)&#123;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			arr.push(chilArr[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 获取后面所有的兄弟节点</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">allNext</span>(<span class="params">ele</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> arr = [];</span><br><span class="line">	<span class="keyword">var</span> childArr = ele.parentNode.childNodes;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = childArr.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i --)&#123;</span><br><span class="line">		<span class="keyword">if</span>(childArr[i].nodeType === <span class="number">1</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(chilArr[i] === ele)&#123;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			arr.unshift(childArr[i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>操作节点</p>
+<ul>
+<li>创建: <code>document.createElement(&quot;tagName&quot;)</code></li>
+<li>插入到页面中: <code>parentNode.appendChild() / parentNode.insertBefore(要插入的节点,参照节点)</code></li>
+<li>删除: <code>parentNode.removeChild(ele) / ele.parentNode.removeChild(ele)</code></li>
+<li>克隆: <code>ele.cloneNode(boolean) 默认为false 仅克隆当前元素标签内容 为true 克隆元素所有一切</code></li>
+</ul>
+</li>
+<li><p>属性操作</p>
+<ul>
+<li>获取: <code>getAttribute(&quot;属性名&quot;)</code></li>
+<li>设置: <code>setAttribute(&quot;属性名&quot;,&quot;属性值&quot;)</code></li>
+<li>删除: <code>removeAttribute(&quot;属性名&quot;)</code></li>
+</ul>
+</li>
+<li><p>Inner</p>
+<ul>
+<li>ele.innerHTML = string(可以带标签)        将带标签的字符串解析到元素中去,有副作用(清空元素中所有内容)</li>
+<li>ele.innerText = string    将文本字符串替换到元素中去,有副作用(清空元素中所有文本内容)</li>
+</ul>
+</li>
+<li><p>事件 event</p>
+<ul>
+<li>onclick/onmouse + enter/leave/move/down/up/over/out</li>
+<li>事件对象 event screenX/Y(相对于屏幕) pageX/Y(相对于页面内容) clientX/Y(相对于可见区域) offsetX/Y(相对于所在元素,从 padding 开始)  event.target(事件目标元素)</li>
+</ul>
+</li>
+<li><p>类名操作</p>
+<ul>
+<li><code>ele.className = string</code></li>
+<li><code>ele.setAttribute(&quot;className&quot;,string)</code></li>
+<li><code>ele.classList.add()</code></li>
+<li><code>ele.classList.remove()</code></li>
+<li><code>ele.classList.contains(&quot;类名&quot;)</code>  判断元素时候包含此类名</li>
+</ul>
+</li>
+</ol>
+<h1 id="BOM-浏览器对象模型-提供与浏览器交互的方法和接口"><a href="#BOM-浏览器对象模型-提供与浏览器交互的方法和接口" class="headerlink" title="BOM(浏览器对象模型,提供与浏览器交互的方法和接口)"></a>BOM(浏览器对象模型,提供与浏览器交互的方法和接口)</h1><p>获取浏览器视口:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">检测盒子的宽高 clientHeight/W 盒子 自身宽高 + padding 内容溢出不算</span><br><span class="line">offsetHeight/W 盒子 自身宽高+ padding + border</span><br><span class="line">scrollHeight/W 内容宽高 + padding</span><br><span class="line"></span><br><span class="line">document.documentElement.clientWidth/clientHeight  获取浏览器可视区域的宽高		没有兼容问题</span><br><span class="line">window.innerWidth/innerHeight		IE &lt;= 8 不支持			表示获取 window 可视区域的内部大小</span><br><span class="line">window.outerWidth/outerHeight		IE &lt;= 8 不支持			表示整个浏览器窗体的大小</span><br></pre></td></tr></table></figure></p>
+<p>window 对象的方法:</p>
+<pre><code>+ window.onload = funciton (){}  入口函数
++ window.onresize = function (){}  浏览器窗口大小改变触发
++ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">	*&#123;</span></span><br><span class="line"><span class="undefined">		margin: 0;</span></span><br><span class="line"><span class="undefined">		padding: 0;</span></span><br><span class="line"><span class="undefined">	&#125;</span></span><br><span class="line"><span class="undefined">	div&#123;</span></span><br><span class="line"><span class="undefined">		width: 100%;</span></span><br><span class="line"><span class="undefined">		height: 594px;</span></span><br><span class="line"><span class="undefined">		background-image: url("./DOM+BOM/BOM(4-1)/img/m1.jpg");</span></span><br><span class="line"><span class="undefined">		background-size: 100% 100%;</span></span><br><span class="line"><span class="undefined">	&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">	<span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> d = <span class="built_in">document</span>.querySelector(<span class="string">"div"</span>);</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> w = <span class="built_in">document</span>.documentElement.clientWidth;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> rate = <span class="number">460</span> / <span class="number">1226</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> h = w * rate;</span></span><br><span class="line"><span class="javascript">		d.style.height = h + <span class="string">"px"</span>;</span></span><br><span class="line"><span class="javascript">		<span class="built_in">window</span>.onresize = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> w = <span class="built_in">document</span>.documentElement.clientWidth;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">var</span> h = w * rate;</span></span><br><span class="line"><span class="javascript">			d.style.height = h + <span class="string">"px"</span>;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined">	&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</code></pre><ol>
+<li>事件的冒泡和捕获<ul>
+<li>事件冒泡: 事件由最里层的元素触发条件依次上外层扩散事件</li>
+<li>事件捕获: 事件有外层的元素触发条件,依次向内扩散事件</li>
+</ul>
+</li>
+</ol>
+<p>事件冒泡的利用: 事件委托(父元素代理子元素的事件,常用于ul&gt;li)</p>
+<p>阻止冒泡: <code>event.stopPropagation ? event.stopPropagation() : event.cancelBubble = true</code> 关闭二维码<br>阻止默认事件: <code>event.preventDefault()</code> 阻止a跳转,表单提交,拖拽元素叠加</p>
+<ol start="2">
+<li>事件监听</li>
+</ol>
+<p>写法: <code>ele.addEventListener(&quot;不加on的事件名&quot;,function(){}/声明函数的名字,是否捕获)</code><br>取消事件监听: <code>ele.removeEventListener(&quot;不加on的事件名&quot;,声明函数的名字,是否捕获)</code>,三个参数严格一致</p>
+<ol start="3">
+<li><p>定时器</p>
+<ul>
+<li>延时器: setTimeout(function (){},time) / clearTimeout(“name”)</li>
+<li>定时器: setInterval(function (){},time) / clearInterval(“name”)</li>
+</ul>
+</li>
+<li><p>三大家族</p>
+<ul>
+<li>offset<ul>
+<li>offsetWidth/Height        eleWidth/Height + padding + border</li>
+<li>offsetTop/Left        距离有定位的父类的左上距离</li>
+<li>offsetParent    有定位的父类</li>
+</ul>
+</li>
+<li>scroll<ul>
+<li>scrollWidth/Height        contentWidth/Height + padding</li>
+<li>scrollTop/Left        有滚动条的元素被卷入的上/左距离</li>
+</ul>
+</li>
+<li>client<ul>
+<li>clientWidth/Height        eleWidth/Height + padding</li>
+<li>clientTop/Left        元素 border 的宽高</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>延伸的动画(起点,终点,步长/时间):</p>
+<ol start="0">
+<li>闪现动画 (dom)</li>
+<li><p>匀速动画</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 匀速轮播</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params">ele,target</span>)</span>&#123;</span><br><span class="line">	clearInterval(ele.timer);</span><br><span class="line">	ele.timer = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> start = ele.offsetLeft;</span><br><span class="line">		<span class="keyword">var</span> step = (target - start) &gt; <span class="number">0</span> ? <span class="number">10</span> : <span class="number">-10</span>;</span><br><span class="line">		ele.style.left = start + step + <span class="string">"px"</span>;</span><br><span class="line">		<span class="keyword">var</span> count = target - start;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">Math</span>.abs(count) &lt;= <span class="built_in">Math</span>.abs(step))&#123;</span><br><span class="line">			ele.style.left = target + <span class="string">"px"</span>;</span><br><span class="line">			clearInterval(ele.timer);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,<span class="number">17</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>缓动动画</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">move</span>(<span class="params">ele,target</span>)</span>&#123;</span><br><span class="line">	clearInterval(ele.timer);</span><br><span class="line">	ele.timer = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> start = ele.offsetLeft;</span><br><span class="line">		<span class="keyword">var</span> step = (target - start) / <span class="number">10</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="built_in">Math</span>.abs(step) &lt; <span class="number">1</span>)&#123;</span><br><span class="line">			step = step &gt; <span class="number">0</span> ? <span class="built_in">Math</span>.ceil(step) : <span class="built_in">Math</span>.floor(step);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(start === target)&#123;</span><br><span class="line">			clearInterval(ele.timer);</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		ele.style.left = start + step + <span class="string">"px"</span>;</span><br><span class="line">	&#125;,<span class="number">17</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>拖拽</p>
+</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ele.onmousedown = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</span><br><span class="line">	e = e || <span class="built_in">window</span>.event;</span><br><span class="line">	<span class="comment">// e.offsetX/Y</span></span><br><span class="line">	<span class="keyword">var</span> t = e.pageY - ele.offsetTop;</span><br><span class="line">	<span class="keyword">var</span> l = e.pageX - ele.offsetLeft;</span><br><span class="line">	<span class="built_in">window</span>.onmousemove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</span><br><span class="line">		e = e || <span class="built_in">window</span>.event;</span><br><span class="line">		<span class="keyword">var</span> moveX = e.pageX - l;</span><br><span class="line">		<span class="keyword">var</span> moveY = e.pageY - t;</span><br><span class="line">		ele.style.left = moveX + <span class="string">"px"</span>;</span><br><span class="line">		ele.style.top = moveY + <span class="string">"px"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">window</span>.onmouseup = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">window</span>.onmousemove = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>鼠标跟随</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onmousemove = <span class="function"><span class="keyword">function</span> (<span class="params">e</span>)</span>&#123;</span><br><span class="line">	e = e || <span class="built_in">window</span>.event;</span><br><span class="line">	<span class="keyword">var</span> x = e.pageX;		<span class="comment">// 获取鼠标横坐标</span></span><br><span class="line">	<span class="keyword">var</span> y = e.pageY;		<span class="comment">// 获取鼠标纵坐标</span></span><br><span class="line">	<span class="comment">// 给 ele 设置左上的定位置</span></span><br><span class="line">	ele.style.left = x - ele.offsetWidth/<span class="number">2</span> + <span class="string">"px"</span>;</span><br><span class="line">	ele.style.top = y - ele.offsetHeight/<span class="number">2</span> + <span class="string">"px"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>单元素多属性动画封装</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ele 元素 obj: 改变的元素样式&#123;width: 200,height: 200&#125;</span></span><br><span class="line"><span class="comment">// opcity,zIndex</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">anim</span>(<span class="params">ele,obj</span>)</span>&#123;</span><br><span class="line">	clearInterval(ele.timer);</span><br><span class="line">	ele.timer = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> status = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> obj)&#123;</span><br><span class="line">			<span class="keyword">if</span>(i === <span class="string">"zIndex"</span>)&#123;</span><br><span class="line">				ele.style.zIndex = obj[i];</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">var</span> start,target;</span><br><span class="line">			<span class="keyword">if</span>(i === <span class="string">"opacity"</span>)&#123;</span><br><span class="line">				start = <span class="built_in">parseInt</span>(getStyle(ele,i) * <span class="number">100</span>);</span><br><span class="line">				target = obj[i] * <span class="number">100</span>;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				start = <span class="built_in">parseInt</span>(getStyle(ele,i));</span><br><span class="line">				target = obj[i];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">var</span> step = (target - start) / <span class="number">10</span>;</span><br><span class="line">			<span class="keyword">if</span>(<span class="built_in">Math</span>.abs(step) &lt; <span class="number">1</span>)&#123;</span><br><span class="line">				step = step &gt; <span class="number">0</span> ? <span class="built_in">Math</span>.ceil(step) : <span class="built_in">Math</span>.floor(step);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(start !== target)&#123;</span><br><span class="line">				status = <span class="literal">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(i === <span class="string">"opacity"</span>)&#123;</span><br><span class="line">				ele.style[i] = (start + step) / <span class="number">100</span>;</span><br><span class="line">			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">				ele.style[i] = start + step + <span class="string">"px"</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(status)&#123;</span><br><span class="line">			clearInterval(ele.timer);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,<span class="number">17</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getStyle</span>(<span class="params">ele,styleName</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(ele.currentStyle)&#123;</span><br><span class="line">		<span class="keyword">return</span> ele.currentStyle[styleName];</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="built_in">window</span>.getComputedStyle(ele,<span class="literal">null</span>)[styleName];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>多元素多属性动画封装</li>
+</ol>
+<blockquote>
+<p>多次调用单元素多动画函数即可</p>
+</blockquote>
+<p>案例: 旋转木马</p>
+<h1 id="HTML5-CSS3"><a href="#HTML5-CSS3" class="headerlink" title="HTML5 + CSS3"></a>HTML5 + CSS3</h1><ol>
+<li><p>自定义标签属性</p>
+<ul>
+<li>自定义属性前缀  data-任意值=”” </li>
+<li>data-my-name=”mm”，获取 Node.dataset.myName/Node.dataset[‘myName’]</li>
+</ul>
+</li>
+<li><p>新增一些标签 和 input的type类型</p>
+<ul>
+<li>语义化标签 header/footer/figure/nav/section/aside …</li>
+<li>type: email/number/url/range/data/color …</li>
+<li>新的input标签 meter/progress …</li>
+</ul>
+</li>
+<li><p>iframe 页面的内嵌页面 a 的target <code>_blank/_self/_top/_parent</code></p>
+</li>
+<li><p>兼容 IE 的做法: css hack</p>
+</li>
+<li><p>多媒体</p>
+<ul>
+<li>video</li>
+<li>audio</li>
+<li>属性<ul>
+<li>duration</li>
+<li>currentTime</li>
+<li>paused</li>
+</ul>
+</li>
+<li>方法<ul>
+<li>play()</li>
+<li>pause()</li>
+<li>load()</li>
+<li>video.webkitRequestFullScreen()</li>
+</ul>
+</li>
+<li>事件<ul>
+<li>oncanplay: 事件在用户可以开始播放视频/音频（audio/video）时触发</li>
+<li>ontimeupdate: 通过该事件来报告当前的播放进度</li>
+<li>onended: 播放完时触发</li>
+</ul>
+</li>
+<li>案例: 自己写的拖拽进度条</li>
+</ul>
+</li>
+<li><p>新增的标签属性</p>
+<ul>
+<li>contentEditable 元素可被编辑</li>
+<li>hidden 隐藏元素</li>
+<li>tabIndex 控制按 tab 切换输入框的顺序</li>
+<li>draggable = true 元素可被拖拽</li>
+</ul>
+</li>
+<li><p>页面存值</p>
+<ul>
+<li>localStorage   永久存储,不手动删除,不会消失</li>
+<li>sessionStorage    当前标签页被关闭,内容清空</li>
+<li>方法:<ul>
+<li>setItem(“key”,”value”)</li>
+<li>getItem(“key”)</li>
+<li>removeItem(“key”)</li>
+<li>clear()</li>
+<li>key(下标)  获取相应的键值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>全屏显示</p>
+</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">ele</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(ifFullscreen())&#123;</span><br><span class="line">		<span class="comment">//退出全屏必须使用 document的api</span></span><br><span class="line">		<span class="keyword">if</span> (<span class="built_in">document</span>.exitFullscreen) &#123;</span><br><span class="line">			<span class="built_in">document</span>.exitFullscreen();</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.webkitCancelFullScreen) &#123;</span><br><span class="line">			<span class="built_in">document</span>.webkitCancelFullScreen();</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.mozCancelFullScreen) &#123;</span><br><span class="line">			<span class="built_in">document</span>.mozCancelFullScreen();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="comment">// 开启全屏 需要作用到元素上面</span></span><br><span class="line">		<span class="keyword">if</span> (ele.requestFullscreen) &#123;</span><br><span class="line">			ele.requestFullscreen();</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (ele.webkitRequestFullscreen) &#123;</span><br><span class="line">			ele.webkitRequestFullscreen();</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (ele.mozRequestFullscreen) &#123;</span><br><span class="line">			ele.mozRequestFullscreen();</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			alert(<span class="string">"sorry,无法全屏"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 判断是否是全屏</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ifFullscreen</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">document</span>.fullscreen || <span class="built_in">document</span>.webkitIsFullScreen || <span class="built_in">document</span>.mozFullScreen || <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="9">
+<li><p>CSS3 选择器</p>
+<ul>
+<li>属性选择器  <code>p[title^=&quot;p&quot;]{color:red}</code></li>
+<li>伪类选择器  <code>li:firsth-child/:last-child/:nth-child(n)/:nth-last-child(n)</code><ul>
+<li>n 从0开始的自然数 支持表达式: 2n,2n-1,odd,even,5-n,n+5</li>
+<li>:nth-child(0) 无意义</li>
+</ul>
+</li>
+<li>伪元素 <code>::before / ::after/::first-letter文本的第一个字母或字/::first-line 文本第一行/::selection 可改变选中文本的样式</code><ul>
+<li>一定要写: <code>content: &quot;&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>颜色</p>
+<ul>
+<li>hsla(0-360,饱和度 取值范围0%~100%,亮度 取值范围0%~100%,Alpha) 360 表示红,240 表示蓝, 120 表示绿</li>
+<li>rgba(0-255,0-255,0-255,Alpha)</li>
+<li>#000000 六位表示颜色, 八位数表示带透明度的颜色,具体查阅相关文档</li>
+</ul>
+</li>
+<li><p>阴影</p>
+<ul>
+<li>文本阴影 <code>text-shadow: 偏移量x,偏移量y,模糊度(模糊半径,越大越模糊),颜色(可设透明度)</code> 凹凸文字</li>
+<li>盒子阴影 <code>box-shadow: h-shadow(x) v-shadow(y) blur(模糊半径) spread(扩展范围) color(颜色) inset(是否内嵌,可省略);</code></li>
+</ul>
+</li>
+<li><p>盒子模型 (box-sizing)</p>
+<ul>
+<li>默认的 content-box            盒子固定内容区大小,padding 和 border 自由</li>
+<li>可以设置 border-box        盒子固定大小,padding 和 border 往盒子内部挤</li>
+</ul>
+</li>
+<li><p>边框图片(border-image)</p>
+<ul>
+<li>border-image 属性是一个简写属性，用于设置以下属性：<ul>
+<li>border-image-source  图片</li>
+<li>border-image-slice    图片边框向内偏移量</li>
+<li>border-image-outset  边框图像区域超出边框的量(默认 0 ,每次移动 1*border 的宽的距离)</li>
+<li>border-image-width    边框宽度(不写默认边框宽度)</li>
+<li>border-image-repeat   图像边框是否应平铺(repeat)、铺满(round)或拉伸(stretch)。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>渐变</p>
+<ul>
+<li>线性渐变<ul>
+<li>语法：background: linear-gradient(direction, color-stop1, color-stop2, …);</li>
+<li>direction: 方向 可以使 角度(10deg)顺时针  也可以是 to top/left/right/bottom</li>
+<li>颜色后面可以跟百分比,表示从百分几开始渐变</li>
+<li>重复渐变: background: repeating-linear-gradient(to right, red 10%, green 20%)</li>
+<li>兼容写法: -webkit- / -o / -moz … 方向不加 to ,方向是反方向</li>
+</ul>
+</li>
+<li>径向渐变<ul>
+<li>语法：background: radial-gradient(center, shape size, start-color, …, last-color);</li>
+<li>shape size:参考 <code>http://www.runoob.com/try/try.php?filename=trycss3_gradient-radial_size</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>背景加强(Background:url  repeat  position)<br>    + background-image<br>    + background-size             设置背景图片的尺寸</p>
+<pre><code>- width height 直接设置宽高 百分比
+- cover  会自动调整缩放比例，保证图片始终填充满背景区域，如有溢出部分则会被隐藏。
+- contain  会自动调整缩放比例，保证图片始终完整显示在背景区域,可能会有留白。
+</code></pre></li>
+</ol>
+<p>    + background-origin  (原点，起点)设置背景定位的原点</p>
+<pre><code>- border-box         以边框做为参考原点；
+- padding-box     以内边距做为参考原点；
+- content-box     以内容区做为参考点；
+</code></pre><p>    + background-clip     设置背景区域clip(裁切)</p>
+<pre><code>- border-box    裁切边框以内为背景区域；
+- padding-box   裁切内边距以内为背景区域；
+- content-box   裁切内容区做为背景区域
+</code></pre><ol start="16">
+<li><p>过渡(transition)</p>
+<ul>
+<li>transition: transition-property transition-duration transition-timing-function transition-delay</li>
+<li>transition-property   规定应用过渡的 CSS 属性的名称 (一般都写 all);</li>
+<li>transition-duration   定义过渡效果花费的时间。默认是 0</li>
+<li>transition-timing-function: 规定过渡效果的时间曲线。默认是 “ease”。<ul>
+<li>linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n);</li>
+<li>transition-delay             规定过渡效果何时开始。默认是 0。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>转换(transform)</p>
+<ul>
+<li>2D<ul>
+<li>rotate()</li>
+<li>scale()</li>
+<li>translate(x,y)</li>
+<li>skew(x deg,y deg)</li>
+</ul>
+</li>
+<li>3D<ul>
+<li>设置景深: perspective: 1000px;</li>
+<li>子元素显示3D效果: transform-style: preserve-3d;</li>
+<li>rotateX/Y/Z()</li>
+<li>translateX/Y/Z()</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>动画(animation)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">1. Animation-name			 动画名称(必填)</span><br><span class="line">2. Animation-duration	 动画持续时间</span><br><span class="line">3. animation-timing-function</span><br><span class="line">		linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier(n,n,n,n)：	特定的贝塞尔曲线类型，4个数值需在[0, 1]区间内</span><br><span class="line">4. animation-delay		 动画延迟（只是第一次）</span><br><span class="line">5. animation-iteration-count	 重复次数	infinite 无限次  steps() 按步骤走,补间动画</span><br><span class="line">6.animation-direction		动画是否重置后再开始播放</span><br><span class="line">		alternate动画直接从上一次停止的位置开始执行，倒着来</span><br><span class="line">		normal	动画第二次直接跳到0%的状态开始执行</span><br><span class="line">7.animation-fill-mode		动画执行完毕后状态</span><br><span class="line">		forwards	当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。</span><br><span class="line">		backwards	在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。</span><br><span class="line">		both	设置对象状态为动画结束或开始的状态，结束时状态优先</span><br><span class="line"></span><br><span class="line">语法:	animation: name duration timing-function delay iteration-count direction fill-mode;</span><br><span class="line"></span><br><span class="line">name duration 必须写,其余可以都不写</span><br><span class="line"></span><br><span class="line">animation-play-state		播放状态（ running 播放 和 paused 暂停 ）</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 不推荐form/to */</span></span><br><span class="line">@<span class="keyword">keyframes</span> name()&#123;</span><br><span class="line">	from/0%&#123;</span><br><span class="line">		<span class="comment">/* 起始状态要跟元素 css 设置的一样 */</span></span><br><span class="line">	&#125; </span><br><span class="line">	to/100%&#123;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/15/javascript/" data-id="cjvoxufl000015cqkebeq4fb3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/15/javascript/">javascript</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/15/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
